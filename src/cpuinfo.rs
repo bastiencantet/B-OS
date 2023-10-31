@@ -6,7 +6,7 @@ pub fn print_cpu_blok_info() {
 
     println!("-----------------CPU INFO--------------------");
     println!(
-        "Vendor is: {}",
+        "Vendor: {}",
         cpuid
             .get_vendor_info()
             .as_ref()
@@ -14,7 +14,7 @@ pub fn print_cpu_blok_info() {
     );
 
     println!(
-        "CPU Model is: {}",
+        "Model: {}",
         cpuid
             .get_processor_brand_string()
             .as_ref()
