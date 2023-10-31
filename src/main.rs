@@ -28,7 +28,7 @@ fn kernel_main(boot_info: &'static BootInfo) -> ! {
     use x86_64::VirtAddr;
     use B_OS::memory::BootInfoFrameAllocator;
 
-    println!("Hello World{}", "!");
+    println!("Welcome to B-OS !");
     B_OS::init();
 
     let phys_mem_offset = VirtAddr::new(boot_info.physical_memory_offset);
